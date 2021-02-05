@@ -1,9 +1,10 @@
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace WirecastTallyBridge {
+namespace WirecastTallyBridge
+{
     /// <summary>
     /// 
     /// !!! WARNING !!!
@@ -871,7 +872,7 @@ namespace WirecastTallyBridge {
 
         public void DoMenuTest()
         {
-//            DebugPrint(0, 0);
+            //            DebugPrint(0, 0);
             int output_menu_id = (int)Late.Invoke(_Document, "MenuByName", 0, "menu_Broadcast");
             if (output_menu_id != 0)
             {
